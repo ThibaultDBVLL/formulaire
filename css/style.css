@@ -1,6 +1,10 @@
 #formulaire{
   display: flex;
   flex-direction: column;
-  background-color: yellow;
+  background-color: ThreeDLightShadow;
 
+}
+
+#genre{
+  flex-direction: row;
 }

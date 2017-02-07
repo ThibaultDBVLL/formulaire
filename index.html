@@ -6,37 +6,41 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
   <body>
-    <div id="#formulaire">
+    <div id="formulaire">
       <label for="">Nom : </label>
-      <input type="text" class="nom"></input> <br>
+      <input type="text" id="nom"></input>
       <label for="">Prenom : </label>
-      <input type="text" class="prenom"></input> <br>
-      <label for="">Login : </label>
-      <input type="text" ></input> <br>
-      <label for="">Sexe : </label>
-      <input type="radio">Homme</input>
-      <input type="radio">Femme</input> <br>
+      <input type="text" id="prenom"></input>
+      <label for="">Identifiant : </label>
+      <input type="text" id="identifiant"></input>
       <label for="password">Mot de passe : </label>
-      <input type="password" class="password" value=""></input> <br>
+      <input type="password" id="password" minlength="8" maxlength="12"></input>
+      <div id="genre">
+        <label for="">Sexe : </label>
+        <input type="radio">Homme</input>
+        <input type="radio">Femme</input>
+      </div> <br>
       <label for="birthdate">Date de naissance : </label>
-      <input type="text"></input> <br>
+      <input type="text"></input>
       <label for="city">Ville : </label>
-      <input type="text" class="city"></input> <br>
+      <input type="text" id="city"></input>
       <label for="birthdate">Date de naissance : </label>
-      <input type="date" name="anniversaire"> <br>
+      <input type="date" name="anniversaire">
       <label for="mail"> Mail :  </label>
-      <input type="text" class="mail"></input> <br>
+      <input type="text" id="mail"></input>
       <label for="url"> Votre site internet :  </label>
-      <input type="url" class="url"></input> <br>
+      <input type="url" id="url"></input>
       <label for="hobbys"> Vos hobbys :  </label>
-      <input type="text" class="hobbys"></input> <br>
-      <label for="tel"> Votre numéro de téléphone :  </label>
-      <input type="tel" class="tel"></input> <br>
+      <input type="text" id="hobbys"></input>
+      <label for="tel"> Votre numéro de téléphone : </label>
+      <input type="tel" id="tel"></input>
       <label for="color"> Votre couleur préférée :  </label>
-      <input type="color" class="color"></input>
+      <input type="color" id="color"></input>
+      <input type="submit" id="submit"></input>
+
     </div>
 
-
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
     <script type="text/javascript" src="js/app.js"></script>
   </body>
 </html>
