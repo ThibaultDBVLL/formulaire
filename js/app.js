@@ -6,20 +6,29 @@ $(document).ready(function(){
         dataType:"json",
         success: jsonFunction,
         error : function(){
-          alert("404 Not Found - Oops something went wrong!");
+          alert("Error 404 - Autodestruction");
         }
 
       });
 
-  var pass = $(.password);
-  console.log(password);
+  $("#submit").click(function(){
+      console.log('submit!');
+    });
+  if (pass === pass.lowercase){
+    console.log('');
+  }
+
 
   var passLength = ($('#password').length);
   console.log(passLength);
 
-  if (passLength<8 & ($(submit).onclick)){
+  if (passLength<8 & ($("#submit").click)){
     console.log("Mot de passe trop court!");
   }
 
+ localStorage.setItem(prenom, );
+
+
+var prenom = $("#prenom").value;
 
 });

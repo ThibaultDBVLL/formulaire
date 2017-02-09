@@ -7,25 +7,23 @@
   </head>
   <body>
     <div id="formulaire">
-      <label for="">Nom : </label>
-      <input type="text" id="nom"></input>
-      <label for="">Prenom : </label>
-      <input type="text" id="prenom"></input>
-      <label for="">Identifiant : </label>
+      <label for="nom">Nom : </label>
+      <input type="text" id="nom" required="required"></input>
+      <label for="prenom" >Prenom : </label>
+      <input type="text" id="prenom" required="required" value="name"></input>
+      <label for="identifiant">Identifiant : </label>
       <input type="text" id="identifiant"></input>
       <label for="password">Mot de passe : </label>
-      <input type="password" id="password" minlength="8" maxlength="12"></input>
+      <input type="password" id="password" minlength="8" maxlength="12" required="required"></input>
       <div id="genre">
-        <label for="">Sexe : </label>
-        <input type="radio">Homme</input>
-        <input type="radio">Femme</input>
+        <label for="genre">Sexe : </label>
+        <input type="radio" class="genre">Homme</input>
+        <input type="radio" class="class">Femme</input>
       </div> <br>
-      <label for="birthdate">Date de naissance : </label>
-      <input type="text"></input>
       <label for="city">Ville : </label>
       <input type="text" id="city"></input>
-      <label for="birthdate">Date de naissance : </label>
-      <input type="date" name="anniversaire">
+      <label for="birthdate" >Date de naissance : </label>
+      <input type="date" name="anniversaire" required="required">
       <label for="mail"> Mail :  </label>
       <input type="text" id="mail"></input>
       <label for="url"> Votre site internet :  </label>
