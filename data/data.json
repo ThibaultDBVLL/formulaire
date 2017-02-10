@@ -1,0 +1,14 @@
+{
+	"utilisateur1": {
+		"nom": "Legris",
+		"prenom": "Gandalf",
+		"identifiant": "Mithrandir",
+		"password": "killSauron6.",
+		"birthdate": "02/09/500",
+		"mail": "gandalflegris@tolkien.jrr",
+		"url": "https://fr.wikipedia.org/wiki/Gandalf",
+		"hobbys": "Aider Frodon et lutter contre Sauron",
+		"tel": "06.45.23.43.56",
+		"color": "gris"
+	}
+}

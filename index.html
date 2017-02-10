@@ -1,44 +1,45 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Formulaire</title>
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-  </head>
-  <body>
+<head>
+  <meta charset="utf-8">
+  <title>Formulaire</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+  <form>
     <div id="formulaire">
       <label for="nom">Nom : </label>
-      <input type="text" id="nom" required="required"></input>
+      <input type="text" id="nom" required="required" value=""></input>
       <label for="prenom" >Prenom : </label>
-      <input type="text" id="prenom" required="required" value="name"></input>
+      <input type="text" id="prenom" required="required" value=""></input>
       <label for="identifiant">Identifiant : </label>
-      <input type="text" id="identifiant"></input>
+      <input type="text" id="identifiant" value=""></input>
       <label for="password">Mot de passe : </label>
-      <input type="password" id="password" minlength="8" maxlength="12" required="required"></input>
+      <input type="password" id="password" minlength="8" maxlength="12" required="required" value=""></input>
       <div id="genre">
         <label for="genre">Sexe : </label>
         <input type="radio" class="genre">Homme</input>
         <input type="radio" class="class">Femme</input>
       </div> <br>
-      <label for="city">Ville : </label>
-      <input type="text" id="city"></input>
+      <label for="city" value="">Ville : </label>
+      <input type="text" id="city" value=""></input>
       <label for="birthdate" >Date de naissance : </label>
-      <input type="date" name="anniversaire" required="required">
+      <input type="date" name="anniversaire" required="required" >
       <label for="mail"> Mail :  </label>
-      <input type="text" id="mail"></input>
+      <input type="text" id="mail" value=""></input>
       <label for="url"> Votre site internet :  </label>
-      <input type="url" id="url"></input>
+      <input type="url" id="url" value=""></input>
       <label for="hobbys"> Vos hobbys :  </label>
-      <input type="text" id="hobbys"></input>
+      <input type="text" id="hobbys" value=""></input>
       <label for="tel"> Votre numéro de téléphone : </label>
-      <input type="tel" id="tel"></input>
+      <input type="tel" id="tel" value=""></input>
       <label for="color"> Votre couleur préférée :  </label>
-      <input type="color" id="color"></input>
-      <input type="submit" id="submit"></input>
-
+      <input type="color" id="color" ></input>
+      <input type="submit" id="submit" value="Valider"></input>
     </div>
-
-    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
-    <script type="text/javascript" src="js/app.js"></script>
-  </body>
+  </form>
+  <div id="app"></div>
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+  <script type="text/javascript" src="js/app.js"></script>
+</body>
 </html>

@@ -1,34 +1,48 @@
 $(document).ready(function(){
 
-    $.ajax({
-        type:"GET",
-        url:"data.json",
-        dataType:"json",
-        success: jsonFunction,
-        error : function(){
-          alert("Error 404 - Autodestruction");
-        }
+    var users = [];
+    $('form').submit(function(event){
+            event.preventDefault();
+            console.log("send");
+            var nom = $("#nom").val();
+            var prenom = $("#prenom").val();
+            var login = $("#identifiant").val();
+            var password = $("#password").val();
+            var genre = $("#genre").val();
+            var city = $("#prenom").val();
+            var birth = $("#birthdate").val();
+            var mail = $("#mail").val();
+            var url = $("#url").val();
+            var hobbys = $("#hobbys").val();
+            var tel = $("#tel").val();
+            var color = $("#color").val();
+            var obj ={
+                nom : nom,
+                prenom : prenom,
+                login : login,
+                password : password,
+                genre : genre,
+                city : city,
+                birth : city,
+                mail : mail,
+                url : url,
+                hobbys : hobbys,
+                tel : tel,
+                color : color
+            };
+            users.push(obj);
+            console.log(users);
+            localStorage.setItem('users',JSON.stringify(users));
+            var user = localStorage.getItem('users');
+            var parseUser = JSON.parse(user);
+            for(var i = 0; i<parseUser; i++){
+                console.log(parseUser[i]);
+                $('#app').append(parseUser[i] + nom);
+            }
+        });
 
-      });
-
-  $("#submit").click(function(){
-      console.log('submit!');
-    });
-  if (pass === pass.lowercase){
-    console.log('');
-  }
-
-
-  var passLength = ($('#password').length);
-  console.log(passLength);
-
-  if (passLength<8 & ($("#submit").click)){
-    console.log("Mot de passe trop court!");
-  }
-
- localStorage.setItem(prenom, );
-
-
-var prenom = $("#prenom").value;
+if ($("#password" === "#password".lowercase && $("#submit").click)){
+    console.log("veuillez mettre au moins une majuscule !");
+}
 
 });
