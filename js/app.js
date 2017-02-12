@@ -9,7 +9,7 @@ $(document).ready(function(){
             var login = $("#identifiant").val();
             var password = $("#password").val();
             var genre = $("#genre").val();
-            var city = $("#prenom").val();
+            var city = $("#city").val();
             var birth = $("#birthdate").val();
             var mail = $("#mail").val();
             var url = $("#url").val();
@@ -44,5 +44,9 @@ $(document).ready(function(){
 if ($("#password" === "#password".lowercase && $("#submit").click)){
     console.log("veuillez mettre au moins une majuscule !");
 }
+
+// var testpassword = /^./.test(str);
+// console.log(testpassword);
+
 
 });
